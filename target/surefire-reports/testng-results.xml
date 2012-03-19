@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="com.demo.BaseClassTest" duration-ms="22" started-at="2012-03-17T19:20:52Z" finished-at="2012-03-17T19:20:52Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="22" started-at="2012-03-17T19:20:52Z" finished-at="2012-03-17T19:20:52Z">
+      <class name="com.demo.BaseClassTest">
+        <test-method status="PASS" signature="verifyData1(java.lang.String, java.lang.Integer)[pri:0, instance:com.demo.BaseClassTest@39e57e8f]" name="verifyData1" duration-ms="5" started-at="2012-03-17T19:20:52Z" finished-at="2012-03-17T19:20:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Cedric]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[36]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- verifyData1 -->
+        <test-method status="PASS" signature="verifyData1(java.lang.String, java.lang.Integer)[pri:0, instance:com.demo.BaseClassTest@39e57e8f]" name="verifyData1" duration-ms="0" started-at="2012-03-17T19:20:52Z" finished-at="2012-03-17T19:20:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Anne]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[37]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- verifyData1 -->
+        <test-method status="PASS" signature="verifyData1(java.lang.String, java.lang.Integer)[pri:0, instance:com.demo.BaseClassTest@39e57e8f]" name="verifyData1" duration-ms="0" started-at="2012-03-17T19:20:52Z" finished-at="2012-03-17T19:20:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Karthik]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[25]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- verifyData1 -->
+      </class> <!-- com.demo.BaseClassTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- com.demo.BaseClassTest -->
+</testng-results>
