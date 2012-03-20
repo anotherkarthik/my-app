@@ -17,14 +17,17 @@ public class FirstTest {
     public void getBrowserHandle() {
     driver = DriverProvider.getDriver();
         }
+
     @Test
     public void one() {
 
-//        driver = new FirefoxDriver();
+//        driver = new FirefoxDriver();      -- we don't have to do this inside the test as we have the driver
+        // instance available in @BeforeSuite method - which will ensure that the driver is initialized before
+        // any of the tests start to run
+
         driver.navigate().to("http://www.google.co.in");
         ((JavascriptExecutor) driver).executeScript("document.body.innerHTML = '<br>'");
 
-//        System.out.println("test kjhfksdhkhsdfh");
     }
 
     @Test  (groups = { "regression"} )

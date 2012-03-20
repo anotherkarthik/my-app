@@ -8,6 +8,10 @@
     <name>my-app</name>
     <url>http://maven.apache.org</url>
     <build>
+        <!--
+        the plugin maven-surefire is used by maven to run testng functional tests
+        the plugin reportng is specified by us to generate formatted HTML reports
+        -->
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -21,6 +25,8 @@
                     <!--<suiteXmlFile>testng.xml</suiteXmlFile>-->
                     <!--</suiteXmlFiles>-->
                     <properties>
+                        <!-- the below piece of property tells testng to disable its default listener
+                        thereby allowing us to use the reportng.HTMLREporter plugin to generate reports -->
                         <property>
                             <name>usedefaultlistener</name>
                             <value>false</value>
@@ -53,6 +59,10 @@
                 </exclusion>
             </exclusions>
         </dependency>
+        <!-- the below dependencies for google code guice were required in my mac machine,
+        it might not be required in your environment so you can remove these if your tests run without
+        issues after removing them
+        -->
         <dependency>
             <groupId>com.google.code.guice</groupId>
             <artifactId>guice</artifactId>
@@ -74,6 +84,10 @@
             <version>1.0</version>
             <scope>test</scope>
         </dependency>
+        <!-- the below dependency is for adding the latest version of WebDriver to the project
+        if there is an issue with the version of webdriver, go ahead and update the version once the fix is available
+        in the next version this will ensure that you are not trying to solve a problem that is already solved
+        -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
@@ -85,6 +99,8 @@
             <!--<version>2.14.0</version>-->
         <!--</dependency>-->
     </dependencies>
+    <!-- the below are additional repositories which I added to download reportng reporter this is the
+    repository where reportng is located -->
     <repositories>
         <repository>
             <id>java.net-Public</id>

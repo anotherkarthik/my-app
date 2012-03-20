@@ -14,12 +14,28 @@ public class DriverProvider {
 
     private FirefoxProfile firefoxProfile = new FirefoxProfile();
 
+    /*
+    The constructor below is made private to avoid other classes instantiating the DriverProvider class
+     */
+
     private DriverProvider() {
 
+        /*
+        to enable firefox to accept in-valid digital certificates,
+         */
       // firefoxProfile.setAssumeUntrustedCertificateIssuer(false);
 
 //        firefoxProfile.setAcceptUntrustedCertificates(true);
+        /*
+        to start firefox from a custom location, uncomment the below code
+         */
 //        firefoxProfile.setPreference("webdriver.firefox.bin","/opt/firefox7/firefox.bin");
+
+        /*
+        if you have to start firefox with the above settings mentioned for profile object pass it as an argument to the
+        FirefoxDriver() below
+
+         */
         driver = new FirefoxDriver();
     }
 
